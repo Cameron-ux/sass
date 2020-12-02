@@ -1,0 +1,694 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header {
+  position: relative; }
+  header .vague {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    z-index: -1; }
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end; }
+  .logo aside {
+    display: flex;
+    padding-top: 1%;
+    padding-left: 11%; }
+    .logo aside h1 {
+      padding: 16% 0 0 5%;
+      font-family: "Dosis", sans-serif;
+      font-size: 2.5em;
+      font-weight: bold; }
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 17%; }
+  .menu p {
+    margin-left: 20px;
+    padding-bottom: 8%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1.1em;
+    color: white;
+    cursor: pointer; }
+
+.networks {
+  display: flex; }
+  .networks .reseau {
+    margin: 300% 0 0 50%; }
+    .networks .reseau li {
+      margin: 20px;
+      list-style: none; }
+  .networks .social {
+    width: 27%;
+    margin: 6.5% 0 0 7%; }
+    .networks .social h2 {
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-size: 1.9em;
+      color: #42495b; }
+      .networks .social h2 u {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.7em;
+        color: #42495b; }
+    .networks .social p {
+      font-family: "Poppins", sans-serif;
+      font-weight: lighter;
+      font-size: 0.8em;
+      width: 70%;
+      color: #7a839e;
+      margin-bottom: 7%; }
+  .networks .pic {
+    width: 39%;
+    margin: auto; }
+    .networks .pic img {
+      width: 95%; }
+
+hr {
+  width: 20px;
+  transform: rotate(90deg);
+  color: #1a129f;
+  margin-left: -5px; }
+
+.souris {
+  background: url(../picto/mouse.svg) no-repeat center;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  box-shadow: 0 10px 20px 0 rgba(126, 118, 249, 0.16); }
+
+@media screen and (min-width: 0px) and (max-width: 1024px) {
+  header .vague {
+    width: 60%; }
+  .logo aside {
+    padding-top: 2%;
+    width: 20%; }
+    .logo aside img {
+      width: 60%; }
+    .logo aside h1 {
+      padding-top: 30%;
+      font-family: "Dosis", sans-serif;
+      font-size: 1.6em; }
+  .menu {
+    right: 15%; }
+    .menu p {
+      margin-left: 25px;
+      padding-bottom: 3%;
+      font-size: 1em; }
+  .networks .reseau {
+    margin: 250% 0 0 25%; }
+  .networks .social {
+    width: 30%;
+    margin: 6% 0 0 4%; }
+    .networks .social h2 {
+      font-size: 1.5em; }
+      .networks .social h2 u {
+        font-size: 1.6em; }
+    .networks .social p {
+      font-size: 0.7em; }
+  .networks .pic {
+    width: 45%; }
+    .networks .pic img {
+      width: 100%; }
+  .souris {
+    display: none; } }
+
+@media screen and (min-width: 0px) and (max-width: 813px) {
+  .logo aside img {
+    width: 70%; }
+  .logo aside h1 {
+    padding-top: 30%;
+    font-size: 1.4em; }
+  .menu {
+    right: 12%; }
+    .menu p {
+      margin-left: 20px;
+      padding-bottom: 2.5%; }
+  .networks .reseau {
+    margin: 100% 0 0 25%; }
+  .networks .social {
+    width: 30%; }
+    .networks .social h2 {
+      font-size: 1.1em; }
+      .networks .social h2 u {
+        font-size: 1.4em; }
+    .networks .social p {
+      font-size: 0.6em; }
+  .networks .pic {
+    width: 41%; }
+    .networks .pic img {
+      width: 90%; }
+  .souris {
+    display: none; } }
+
+@media screen and (min-width: 0px) and (max-width: 769px) {
+  header .vague {
+    width: 60%; }
+  .logo aside {
+    padding-top: 2%;
+    padding-left: 11%;
+    width: 20%; }
+    .logo aside img {
+      width: 80%; }
+    .logo aside h1 {
+      padding-top: 40%;
+      font-family: "Dosis", sans-serif;
+      font-size: 1.5em; }
+  .menu {
+    right: 10%; }
+    .menu p {
+      margin-left: 15px;
+      padding-bottom: 2%;
+      font-size: 1em; }
+  .networks .reseau {
+    margin: 100% 0 0 25%; }
+    .networks .reseau li {
+      margin: 20px; }
+  .networks .social {
+    width: 27%;
+    margin: 6% 0 0 4%; }
+    .networks .social h2 {
+      font-size: 1.2em; }
+      .networks .social h2 u {
+        font-size: 1.46em; }
+    .networks .social p {
+      font-size: 0.5em; }
+  .networks .pic {
+    width: 40%; }
+    .networks .pic img {
+      width: 100%; }
+  hr {
+    width: 20px;
+    transform: rotate(90deg);
+    color: #1a129f;
+    margin-left: -5px; }
+  .souris {
+    display: none; } }
+
+@media screen and (min-width: 0px) and (max-width: 376px) {
+  header .vague {
+    display: none; }
+  .logo {
+    justify-content: center; }
+    .logo aside h1 {
+      padding-top: 40%;
+      font-family: "Dosis", sans-serif;
+      font-size: 1.2em; }
+  .menu {
+    position: none; }
+    .menu p {
+      display: none; }
+  .networks .reseau li {
+    display: none; }
+  .networks .social {
+    width: 45%;
+    margin: 6% 0 0 4%; }
+    .networks .social h2 {
+      font-size: 1em; }
+      .networks .social h2 u {
+        font-size: 1.3em; }
+    .networks .social p {
+      font-size: 0.4em; }
+  .networks .pic {
+    width: 40%; }
+    .networks .pic img {
+      width: 100%; }
+  hr {
+    width: 20px;
+    transform: rotate(90deg);
+    color: #1a129f;
+    margin-left: -5px; }
+  .souris {
+    display: none; } }
+
+.cta, .cta--plusLarge, .cta--seemoreInfo, .cta--price, .cta--pricevide, .cta--sus {
+  background-image: linear-gradient(to left, #6156f9, #1a129f);
+  font-family: "Poppins", sans-serif;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 25px;
+  cursor: pointer; }
+  .cta--plusLarge {
+    padding: 2% 6%;
+    font-size: 1em; }
+  .cta--seemoreInfo {
+    padding: 10px 30px;
+    float: right; }
+  .cta--price {
+    margin: 95px; }
+  .cta--pricevide {
+    border: 2px solid #1000ff;
+    background-image: none;
+    color: #42495b;
+    margin: 95px; }
+  .cta--sus {
+    padding: 0.9% 3%;
+    margin-left: 2%; }
+
+@media screen and (min-width: 0px) and (max-width: 1024px) {
+  .cta, .cta--plusLarge, .cta--seemoreInfo, .cta--price, .cta--pricevide, .cta--sus {
+    padding: 5px 15px;
+    font-size: 0.8em; }
+    .cta--price {
+      margin: 65px; }
+    .cta--pricevide {
+      margin: 65px; } }
+
+@media screen and (min-width: 0px) and (max-width: 813px) {
+  .cta, .cta--plusLarge, .cta--seemoreInfo, .cta--price, .cta--pricevide, .cta--sus {
+    padding: 5px 15px;
+    font-size: 0.8em; }
+    .cta--price {
+      margin: 40px; }
+    .cta--pricevide {
+      margin: 40px; } }
+
+@media screen and (min-width: 0px) and (max-width: 769px) {
+  .cta, .cta--plusLarge, .cta--seemoreInfo, .cta--price, .cta--pricevide, .cta--sus {
+    padding: 5px 15px;
+    font-size: 0.8em; }
+    .cta--price {
+      margin: 35px; }
+    .cta--pricevide {
+      margin: 35px; } }
+
+@media screen and (min-width: 0px) and (max-width: 376px) {
+  .cta, .cta--plusLarge, .cta--seemoreInfo, .cta--price, .cta--pricevide, .cta--sus {
+    padding: 5px 15px;
+    font-size: 0.6em; }
+    .cta--plusLarge {
+      padding: 2% 4%;
+      font-size: 0.5em; }
+    .cta--seemoreInfo {
+      padding: 5px 10px;
+      float: right;
+      font-size: 0.3em; }
+    .cta--price {
+      font-size: 0.5em;
+      margin: 0;
+      padding: 5px 10px; }
+    .cta--pricevide {
+      font-size: 0.5em;
+      margin: 0;
+      padding: 5px 10px; }
+    .cta--sus {
+      padding: 0.9% 3%;
+      margin-left: 2%; } }
+
+.biography {
+  display: flex;
+  align-items: center;
+  background: url(../img/background-we-are.png) no-repeat right; }
+  .biography .imgBio {
+    padding: 4% 3%;
+    width: 50%; }
+    .biography .imgBio img {
+      width: 90%; }
+  .biography .txtBio {
+    width: 50%; }
+    .biography .txtBio .bio {
+      color: #7e76f9;
+      padding: 5px 0px;
+      font-size: 20px;
+      font-family: "Lato", sans-serif;
+      margin-bottom: 0px;
+      width: 30%; }
+    .biography .txtBio p {
+      width: 70%;
+      font-size: 12px;
+      font-family: "Poppins", sans-serif;
+      color: #7a839e;
+      font-weight: lighter;
+      margin-bottom: 30px; }
+
+@media screen and (min-width: 0px) and (max-width: 376px) {
+  .biography .imgBio {
+    padding: 4% 3%;
+    width: 60%; }
+    .biography .imgBio img {
+      width: 90%; }
+  .biography .txtBio {
+    width: 40%; }
+    .biography .txtBio .bio {
+      margin-bottom: 0px;
+      width: 30%; }
+    .biography .txtBio h2 {
+      font-size: 1.8em; }
+    .biography .txtBio p {
+      width: 90%;
+      font-size: 0.4em;
+      margin-bottom: 10px; } }
+
+.offer {
+  width: 90%;
+  margin: 3% auto 15% auto; }
+  .offer .bg {
+    width: 95%;
+    position: absolute;
+    top: 230vh;
+    z-index: -1; }
+  .offer h3 {
+    color: #7e76f9;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.7em;
+    font-weight: lighter; }
+
+.blocInfo {
+  display: flex; }
+  .blocInfo .info {
+    background-color: white;
+    border-radius: 36px;
+    box-shadow: 0 10px 20px 0 rgba(126, 118, 249, 0.2);
+    width: 30%;
+    padding: 4% 2% 2% 2%;
+    margin: 2% auto; }
+    .blocInfo .info img {
+      margin: auto;
+      display: flex; }
+    .blocInfo .info h4 {
+      font-size: 1.1em;
+      font-family: "Poppins", sans-serif;
+      color: #42495b;
+      padding: 30px 30px 0px 30px; }
+    .blocInfo .info p {
+      width: 100%;
+      font-family: "Lato", sans-serif;
+      font-size: 1em;
+      color: #42495b;
+      padding: 30px; }
+
+@media screen and (min-width: 0px) and (max-width: 813px) {
+  .offer h3 {
+    font-size: 1.2em; }
+  .offer h2 {
+    font-size: 1.7em; }
+  .blocInfo .info {
+    padding: 2% 2% 2% 2%;
+    margin: 1% auto; }
+    .blocInfo .info img {
+      width: 35%; }
+    .blocInfo .info h4 {
+      font-size: 1em;
+      padding: 20px 5px 0 30px; }
+    .blocInfo .info p {
+      font-size: 0.8em;
+      padding: 20px; } }
+
+@media screen and (min-width: 0px) and (max-width: 376px) {
+  .offer h3 {
+    font-size: 1em; }
+  .offer h2 {
+    font-size: 1.4em; }
+  .blocInfo .info {
+    padding: 2% 2% 2% 2%;
+    margin: 1% auto; }
+    .blocInfo .info img {
+      width: 35%; }
+    .blocInfo .info h4 {
+      font-size: 0.5em;
+      padding: 10px 5px 0 30px; }
+    .blocInfo .info p {
+      font-size: 0.4em;
+      padding: 20px; } }
+
+.pricing {
+  background-color: rgba(126, 118, 249, 0.15);
+  padding: 50px 0px; }
+  .pricing .pr {
+    color: #7e76f9;
+    padding: 10px 10px 10px 10px;
+    font-size: 1.7em;
+    font-family: "Lato", sans-serif;
+    text-align: center; }
+  .pricing h2 {
+    text-align: center; }
+  .pricing .info .lorem {
+    font-size: 1em; }
+
+@media screen and (min-width: 0px) and (max-width: 813px) {
+  .pricing .pr {
+    padding: 0 0 0 0;
+    font-size: 1.4em; }
+  .pricing h2 {
+    font-size: 1.8em; }
+  .pricing .info h4 {
+    font-size: 1em; }
+  .pricing .info .lorem {
+    font-size: 0.6em;
+    padding: 5%; }
+  .pricing .info .prix {
+    font-size: 0.5em;
+    padding: 5%; } }
+
+@media screen and (min-width: 0px) and (max-width: 376px) {
+  .pricing .pr {
+    padding: 0 0 0 0;
+    font-size: 1.2em; }
+  .pricing h2 {
+    font-size: 1.8em; }
+  .pricing .info h4 {
+    font-size: 0.4em;
+    padding: 1%; }
+  .pricing .info .lorem {
+    font-size: 0.5em;
+    padding: 5%; }
+  .pricing .info .prix {
+    font-size: 0.2em;
+    padding: 1%; } }
+
+.newsletter {
+  padding: 1%; }
+  .newsletter p {
+    color: #7e76f9;
+    padding-top: 10%;
+    font-size: 1.2em;
+    font-family: "Lato", sans-serif;
+    width: 100%;
+    text-align: center; }
+  .newsletter h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    width: 100%; }
+    .newsletter h2 u {
+      text-decoration: none;
+      font-weight: bold;
+      color: #42495b; }
+  .newsletter article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%; }
+    .newsletter article input {
+      width: 30%; }
+
+@media screen and (min-width: 0px) and (max-width: 376px) {
+  .newsletter p {
+    padding-top: 5%;
+    font-size: 1em; }
+  .newsletter h2 {
+    font-size: 1.2em; }
+  .newsletter article {
+    margin: 3%; }
+    .newsletter article input {
+      width: 70%; } }
+
+h2 {
+  color: #42495b;
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  padding: 5px 0px; }
+
+.blocPrix {
+  display: flex;
+  width: 80%;
+  margin: auto; }
+  .blocPrix .info {
+    background-color: white;
+    border-radius: 36px;
+    box-shadow: 0 10px 20px 0 rgba(126, 118, 249, 0.2);
+    width: 30%;
+    padding: 50px 10px 70px 10px;
+    margin: 30px auto; }
+    .blocPrix .info h4 {
+      font-size: 20px;
+      font-family: "Lato", sans-serif;
+      color: #42495b;
+      font-weight: lighter;
+      text-align: center;
+      padding: 10px 30px 0px 30px; }
+    .blocPrix .info p {
+      text-align: center;
+      font-family: "Poppins", sans-serif;
+      font-size: 12px;
+      color: #7a839e;
+      padding: 25px; }
+    .blocPrix .info p:nth-child(3) {
+      font-size: 30px;
+      font-weight: 600;
+      color: #1000ff; }
+
+input {
+  background-color: #f6f7fb;
+  height: 20%;
+  border: none;
+  padding: 10px 40px;
+  color: #999999;
+  font-family: "Poppins", sans-serif; }
+
+footer {
+  display: flex;
+  flex-direction: row; }
+  footer .waveF {
+    position: absolute;
+    width: 100%;
+    z-index: -1; }
+  footer .footer {
+    display: flex; }
+  footer .article1 {
+    padding: 200px 100px 100px 200px;
+    font-family: "Dosis", sans-serif;
+    color: white; }
+    footer .article1 h2 {
+      font-family: "Poppins", sans-serif;
+      color: white;
+      padding: 20px; }
+    footer .article1 p {
+      font-family: "Poppins", sans-serif;
+      font-size: 20px; }
+    footer .article1 img {
+      padding: 20px 20px 5px  0px; }
+  footer h6 {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: normal; }
+  footer ul {
+    padding: 20px; }
+    footer ul li {
+      font-family: "Poppins", sans-serif;
+      font-weight: lighter;
+      color: white;
+      list-style: none;
+      padding: 5px 2px;
+      cursor: pointer; }
+  footer .article2 {
+    padding: 17% 20px 0 150px; }
+  footer .article3 {
+    padding: 17% 20px 0 20px; }
+  footer .article4 {
+    padding: 17% 20px 0 20px; }
+
+@media screen and (min-width: 0px) and (max-width: 1024px) {
+  footer .footer {
+    display: flex; }
+  footer .article1 {
+    padding: 100px 50px 50px 100px; }
+    footer .article1 h2 {
+      padding: 10px; }
+    footer .article1 p {
+      font-size: 1.3em; }
+    footer .article1 img {
+      padding: 20px 10px 0 0; }
+  footer h6 {
+    padding: 5px;
+    font-size: 1em; }
+  footer ul {
+    padding: 14px; }
+    footer ul li {
+      padding: 1px 1px; }
+  footer .article2 {
+    padding: 14% 20px 0 100px; }
+  footer .article3 {
+    padding: 14% 20px 0 20px; }
+  footer .article4 {
+    padding: 14% 10px 0 20px; } }
+
+@media screen and (min-width: 0px) and (max-width: 813px) {
+  footer .article1 {
+    padding: 70px 50px 50px 100px; }
+    footer .article1 h2 {
+      padding: 20px;
+      font-size: 2em; }
+    footer .article1 p {
+      font-size: 1.1em; }
+    footer .article1 img {
+      padding: 20px 10px 0 0; }
+  footer h6 {
+    padding: 4px;
+    font-size: 1em; }
+  footer ul {
+    padding: 13px; }
+    footer ul li {
+      padding: 1px 1px;
+      font-size: 0.7em; }
+  footer .article2 {
+    padding: 14% 20px 0 10px; }
+  footer .article3 {
+    padding: 14% 20px 0 20px; }
+  footer .article4 {
+    padding: 14% 5px 0 20px; } }
+
+@media screen and (min-width: 0px) and (max-width: 769px) {
+  footer .article1 {
+    padding: 70px 50px 50px 100px; }
+    footer .article1 h2 {
+      padding: 20px;
+      font-size: 2em; }
+    footer .article1 p {
+      font-size: 1.1em; }
+    footer .article1 img {
+      padding: 20px 10px 0 0; }
+  footer h6 {
+    padding: 4px;
+    font-size: 1em; }
+  footer ul {
+    padding: 13px; }
+    footer ul li {
+      padding: 1px 1px;
+      font-size: 0.7em; }
+  footer .article2 {
+    padding: 14% 20px 0 10px; }
+  footer .article3 {
+    padding: 14% 20px 0 20px; }
+  footer .article4 {
+    padding: 14% 5px 0 20px; } }
+
+@media screen and (min-width: 0px) and (max-width: 376px) {
+  footer .article1 {
+    padding: 20px 10px 50px 25px; }
+    footer .article1 h2 {
+      padding: 0px;
+      font-size: 1em; }
+    footer .article1 p {
+      font-size: 0.5em; }
+    footer .article1 img {
+      padding: 0 0 0 0;
+      width: 12%; }
+  footer h6 {
+    padding: 2px;
+    font-size: 0.5em; }
+  footer ul {
+    padding: 7px; }
+    footer ul li {
+      padding: 0px 0px;
+      font-size: 0.3em; }
+      footer ul li img {
+        width: 10%; }
+  footer .article2 {
+    padding: 12% 20px 0 10px; }
+  footer .article3 {
+    padding: 12% 20px 0 10px; }
+  footer .article4 {
+    padding: 12% 5px 0 10px; } }

@@ -1,0 +1,145 @@
+.cta
+{
+    background-image: $degrade;
+    font-family: $poppins;
+    color: $white;
+    padding: 10px 30px;
+    border-radius: 25px;
+    cursor: $pointer;
+
+    &--plusLarge
+    {
+        @extend .cta;
+       padding: 2% 6%;
+       font-size: 1em;
+    }
+
+    &--seemoreInfo
+    {
+        @extend .cta;
+        padding: 10px 30px;
+        float: right;
+    }
+
+    &--price
+    {
+        @extend .cta;
+        margin: 95px;
+    }
+
+    &--pricevide
+    {
+        @extend .cta;
+        border: 2px solid $bleufonce;
+        background-image: $none;
+        color: $grey;
+        margin: 95px;
+    }
+
+    &--sus
+    {
+        @extend .cta;
+        padding: 0.9% 3%;
+        margin-left: 2%;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1024px)
+{
+    .cta
+    {
+        padding: 5px 15px;
+        font-size: 0.8em;
+
+        &--price
+        {
+            margin: 65px;
+        }
+
+        &--pricevide
+        {
+            margin: 65px;
+        }
+
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 813px)
+{
+    .cta
+    {
+        padding: 5px 15px;
+        font-size: 0.8em;
+
+        &--price
+        {
+            margin: 40px;
+        }
+
+        &--pricevide
+        {
+            margin: 40px;
+        }
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 769px)
+{
+    .cta
+    {
+        padding: 5px 15px;
+        font-size: 0.8em;
+
+        &--price
+        {
+            margin: 35px;
+        }
+
+        &--pricevide
+        {
+            margin: 35px;
+        }
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 376px)
+{
+    .cta
+    {
+        padding: 5px 15px;
+        font-size: 0.6em;
+
+        &--plusLarge
+        {
+        padding: 2% 4%;
+        font-size: 0.5em;
+        }
+
+        &--seemoreInfo
+        {
+            padding: 5px 10px;
+            float: right;
+            font-size: 0.3em;
+        }
+
+        &--price
+        {
+            font-size: 0.5em;
+            margin: 0;
+            padding: 5px 10px;
+        }
+
+        &--pricevide
+        {
+            font-size: 0.5em;
+            margin: 0;
+            padding: 5px 10px;
+        }
+
+        &--sus
+        {
+            padding: 0.9% 3%;
+            margin-left: 2%;
+        }
+    }
+}

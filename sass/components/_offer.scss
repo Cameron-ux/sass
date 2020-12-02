@@ -1,0 +1,145 @@
+.offer
+{
+    width: 90%;
+    margin: 3% $auto 15% $auto;
+
+    .bg
+    {
+        width: 95%;
+        position: $ab;
+        top: 230vh;
+        z-index: -1;
+    }
+        h3
+        {
+            color: $purple;
+            font-family: $poppins;
+            font-size: $soU;
+            font-weight: $light;
+        }
+}
+
+.blocInfo
+{
+    display: $flex;
+
+    .info
+    {
+        background-color: $white;
+        border-radius: 36px;
+        box-shadow: 0 10px 20px 0 rgba(126, 118, 249, 0.2);
+        width: 30%;
+        padding: 4% 2% 2% 2%;
+        margin: 2% $auto; 
+
+
+        img
+        {
+            margin: $auto;
+            display: $flex;
+        }
+
+        h4
+        {
+            font-size: $sizeMenu;
+            font-family: $poppins;
+            color: $grey;
+            padding: 30px 30px 0px 30px;
+        }
+
+        p
+        {
+            width: 100%;
+            font-family: $lato;
+            font-size: 1em;
+            color: $grey;
+            padding: 30px;
+        }
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 813px)
+{
+    .offer
+    {
+            h3
+            {
+                font-size: 1.2em;
+            }
+
+            h2
+            {
+                font-size: 1.7em;
+            }
+    }
+
+    .blocInfo
+    {
+        .info
+        {
+            padding: 2% 2% 2% 2%;
+            margin: 1% $auto; 
+
+            img
+            {
+                width: 35%;
+            }
+
+            h4
+            {
+                font-size: 1em;
+                padding: 20px 5px 0 30px;
+
+            }
+
+            p
+            {
+                font-size: 0.8em;
+                padding: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 376px)
+{
+    .offer
+    {
+            h3
+            {
+                font-size: 1em;
+            }
+
+            h2
+            {
+                font-size: 1.4em;
+            }
+    }
+
+    .blocInfo
+    {
+        .info
+        {
+            padding: 2% 2% 2% 2%;
+            margin: 1% $auto; 
+
+            img
+            {
+                width: 35%;
+            }
+
+            h4
+            {
+                font-size: 0.5em;
+                padding: 10px 5px 0 30px;
+
+            }
+
+            p
+            {
+                font-size: 0.4em;
+                padding: 20px;
+            }
+        }
+    }
+}

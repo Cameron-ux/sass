@@ -1,0 +1,486 @@
+header
+{
+    position: $re;
+
+    .vague
+    {
+        position: $ab;
+        top: $zero;
+        right: $zero;
+        z-index: -1;
+    }
+}
+
+.logo
+{
+    display: $flex;
+    flex-direction: $row;
+    flex-wrap: $wrap;
+    align-items: flex-end;
+
+    aside
+    {
+        display: $flex;
+        padding-top: $s;
+        padding-left: $paddLogo;
+
+        h1
+        {
+            padding: $paddMark;
+            font-family: $dosis;
+            font-size: $sizeMark;
+            font-weight: $bold;
+        }
+    }
+}
+
+.menu
+{
+    display: $flex;
+    flex-direction: $row;
+    position: $ab;
+    right: $pMenu;
+
+    p
+    {
+        margin-left: $menuP;
+        padding-bottom: $paddMenu;
+        font-family: $poppins;
+        font-weight: $menu;
+        font-size: $sizeMenu;
+        color: $white;
+        cursor: $pointer;
+    }
+}
+
+.networks
+{
+    display: $flex;
+
+    .reseau
+    {
+        margin: $reseau;
+
+        li
+        {
+            margin: $menuP;
+            list-style: $none;
+        }
+    }
+
+    .social
+    {
+        width: 27%;
+        margin: $social;
+
+        h2
+        {
+            font-family: $poppins;
+            font-weight: $menu;
+            font-size: $soH1;
+            color: $grey;
+
+            u
+            {
+                text-decoration: $none;
+                font-weight: $bold;
+                font-size: $soU;
+                color: $grey;
+            }
+        }
+
+        p
+        {
+            font-family: $poppins;
+            font-weight: $light;
+            font-size: 0.8em;
+            width: 70%;
+            color: $greylight;
+            margin-bottom: 7%;
+        }
+    }
+
+    .pic
+    {
+        width: 39%;
+        margin: auto;
+
+        img
+        {
+            width: 95%;
+        }
+    }
+}
+
+
+hr
+{
+    width: $size20;
+    transform: rotate(90deg);
+    color: $bleu;
+    margin-left: -5px;
+}
+
+.souris
+{
+    background: url(../picto/mouse.svg) no-repeat center;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    box-shadow: 0 10px 20px 0 rgba(126, 118, 249, 0.16);
+}
+
+@media screen and (min-width: 0px) and (max-width: 1024px)
+{
+    header
+    {
+        .vague
+        {
+            width: 60%;
+        }
+    }
+
+    .logo
+    {
+        aside
+        {
+            padding-top: 2%;
+            width: 20%;
+
+            img
+            {
+                width: 60%;
+            }
+
+            h1
+            {
+                padding-top: 30%;
+                font-family: $dosis;
+                font-size: 1.6em;
+            }
+        }
+    }
+
+    .menu
+    {
+        right: 15%;
+
+        p
+        {
+            margin-left: 25px;
+            padding-bottom: 3%;
+            font-size: 1em;
+        }
+    }
+
+    .networks
+    {
+        .reseau
+        {
+            margin: 250% 0 0 25%;
+        }
+
+        .social
+        {
+            width: 30%;
+            margin: 6% 0 0 4%;
+
+            h2
+            {
+                font-size: 1.5em;
+
+                u
+                {
+                    font-size: 1.6em;
+                }
+            }
+
+            p
+            {
+                font-size: 0.7em;
+            }
+        }
+
+        .pic
+        {
+            width: 45%;
+
+            img
+            {
+                width: 100%;
+            }
+        }
+    }
+
+    .souris
+    {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 813px)
+{
+    .logo
+    {
+        aside
+        {
+            img
+            {
+                width: 70%;
+            }
+
+            h1
+            {
+                padding-top: 30%;
+                font-size: 1.4em;
+            }
+        }
+    }
+
+    .menu
+    {
+        right: 12%;
+
+        p
+        {
+            margin-left: 20px;
+            padding-bottom: 2.5%;
+        }
+    }
+
+    .networks
+    {
+        .reseau
+        {
+            margin: 100% 0 0 25%;
+        }
+
+        .social
+        {
+            width: 30%;
+            
+            h2
+            {
+                font-size: 1.1em;
+                u
+                {
+                    font-size: 1.4em;
+                }
+            }
+
+            p
+            {
+                font-size: 0.6em;
+            }
+        }
+
+        .pic
+        {
+            width: 41%;
+
+            img
+            {
+                width: 90%;
+            }
+        }
+    }
+
+    .souris
+    {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 769px)
+{
+    header
+    {
+        .vague
+        {
+            width: 60%;
+        }
+    }
+
+    .logo
+    {
+        aside
+        {
+            padding-top: 2%;
+            padding-left: $paddLogo;
+            width: 20%;
+
+            img
+            {
+                width: 80%;
+            }
+
+            h1
+            {
+                padding-top: 40%;
+                font-family: $dosis;
+                font-size: 1.5em;
+            }
+        }
+    }
+
+    .menu
+    {
+        right: 10%;
+
+        p
+        {
+            margin-left: 15px;
+            padding-bottom: 2%;
+            font-size: 1em;
+        }
+    }
+
+    .networks
+    {
+        .reseau
+        {
+            margin: 100% 0 0 25%;
+
+            li
+            {
+                margin: $menuP;
+            }
+        }
+
+        .social
+        {
+            width: 27%;
+            margin: 6% 0 0 4%;
+
+            h2
+            {
+                font-size: 1.2em;
+
+                u
+                {
+                    font-size: 1.46em;
+                }
+            }
+
+            p
+            {
+                font-size: 0.5em;
+            }
+        }
+
+        .pic
+        {
+            width: 40%;
+
+            img
+            {
+                width: 100%;
+            }
+        }
+    }
+
+    hr
+    {
+        width: $size20;
+        transform: rotate(90deg);
+        color: $bleu;
+        margin-left: -5px;
+    }
+
+    .souris
+    {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 376px)
+{
+    header
+    {
+        .vague
+        {
+            display: $none;
+        }
+    }
+
+    .logo
+    {
+        justify-content: center;
+        
+        aside
+        {
+            h1
+            {
+                padding-top: 40%;
+                font-family: $dosis;
+                font-size: 1.2em;
+            }
+        }
+    }
+
+    .menu
+    {
+        position: $none;
+        p
+        {
+            display: $none;
+        }
+    }
+
+    .networks
+    {
+        .reseau
+        {
+
+            li
+            {
+                display: $none;
+            }
+        }
+
+        .social
+        {
+            width: 45%;
+            margin: 6% 0 0 4%;
+
+            h2
+            {
+                font-size: 1em;
+
+                u
+                {
+                    font-size: 1.3em;
+                }
+            }
+
+            p
+            {
+                font-size: 0.4em;
+            }
+        }
+
+        .pic
+        {
+            width: 40%;
+
+            img
+            {
+                width: 100%;
+            }
+        }
+    }
+
+    hr
+    {
+        width: $size20;
+        transform: rotate(90deg);
+        color: $bleu;
+        margin-left: -5px;
+    }
+
+    .souris
+    {
+        display: none;
+    }
+}

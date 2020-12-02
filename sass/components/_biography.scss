@@ -1,0 +1,86 @@
+.biography
+{
+    display: $flex;
+    align-items: center;
+    background: url(../img/background-we-are.png) no-repeat right; 
+  
+    .imgBio
+    {
+        padding: 4% 3%;
+        width: 50%;
+
+        img
+        {
+            width: 90%;
+        }
+
+    }
+
+    .txtBio
+    {
+        width: 50%;
+
+        .bio
+        {
+            color: $purple;
+            padding: $paddingtitle;
+            font-size: $size20;
+            font-family: $lato;
+            margin-bottom: 0px;
+            width: 30%;
+
+        }
+
+        p
+        {
+            width: 70%;
+            font-size: $size12;
+            font-family: $poppins;
+            color: $greylight;
+            font-weight: $light;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 376px)
+{
+    .biography
+    {
+    
+        .imgBio
+        {
+            padding: 4% 3%;
+            width: 60%;
+
+            img
+            {
+                width: 90%;
+            }
+
+        }
+
+        .txtBio
+        {
+            width: 40%;
+
+            .bio
+            {
+                margin-bottom: 0px;
+                width: 30%;
+            }
+
+            h2
+            {
+                font-size: 1.8em;
+            }
+
+            p
+            {
+                width: 90%;
+                font-size: 0.4em;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
